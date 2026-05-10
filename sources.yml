@@ -1,0 +1,32 @@
+sources:
+  # High Trust ATS Sources (Add your curated company slugs here)
+  - name: "Greenhouse Companies"
+    type: "ats_greenhouse"
+    trust_score: 10
+    enabled: true
+    items: ["monzo", "stripe", "grafana", "canonical", "duckduckgo"] # Examples
+
+  - name: "Lever Companies"
+    type: "ats_lever"
+    trust_score: 10
+    enabled: true
+    items: ["hotjar", "buffer", "vercel", "close"]
+
+  # Trusted Remote Boards
+  - name: "RemoteOK"
+    url: "https://remoteok.com/api"
+    type: "api_json"
+    trust_score: 8
+    enabled: true
+
+  - name: "WeWorkRemotely"
+    url: "https://weworkremotely.com/categories/remote-programming-jobs.rss"
+    type: "rss"
+    trust_score: 8
+    enabled: true
+
+  - name: "Himalayas"
+    url: "https://himalayas.app/jobs/api"
+    type: "api_json"
+    trust_score: 8
+    enabled: true
